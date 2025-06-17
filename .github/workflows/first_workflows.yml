@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-        
+
       - name: Print Hello Message
         run: echo "Hello, World! This is my first GitHub Actions workflow!"
+      
+      - name: show content of /etc/passwd
+        run: sudo cat /etc/passwdadde
