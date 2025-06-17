@@ -3,12 +3,22 @@ name: Action-workflow
 on: push
    
 jobs:
-  first:
+  first-job:
     runs-on: ubuntu-latest
 
     steps:
 
-      - name: Print Hello Message
-        run: echo "Hello, World! This is my first GitHub Actions workflow!"
+      - name: Print Message for 1st job
+        run: echo "This is forst stage"
+
+
+  second-job:
+    runs-on: ubuntu-latest
+    
+    steps:
+
+      - name: Print message for 2nd job
+        run: echo "This is 2nd stage" 
+
       
      
