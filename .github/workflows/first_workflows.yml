@@ -11,11 +11,4 @@ jobs:
       - name: Print Hello Message
         run: echo "Hello, World! This is my first GitHub Actions workflow!"
       
-      - name: show content of /etc/passwd
-        run: sudo cat /etc/passwd
-
-      - name: show os-details
-        run: sudo cat /etc/os-release 
-       
-      - name: show file
-        run: sudo ls -l   
+     
