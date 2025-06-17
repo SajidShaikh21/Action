@@ -8,17 +8,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print Message for 1st job
-        run: |
-          sleep 10
-          echo "This is first stage"
+      - name: create file
+        run:  echo "This is test report" > report.txt
+
+
 
   second-job:
     runs-on: ubuntu-22.04
     needs: first-job
 
     steps:
-      - name: Print message for 2nd job
-        run: | 
-          sleep 5
-          echo "This is 2nd stage"
+      - name: viewing report from first job
+        run:  cat report.txt
