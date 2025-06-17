@@ -21,8 +21,8 @@ jobs:
 
       - name: Print message for 2nd job
         run: | 
-            sleep 5
-            echo "This is 2nd stage" 
+                sleep 5
+                echo "This is 2nd stage" 
 
       
      
