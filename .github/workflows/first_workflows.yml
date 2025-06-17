@@ -11,6 +11,12 @@ jobs:
       - name: create file
         run:  echo "This is test report" > report.txt
 
+      - name: upload the file 
+        uses: actions/upload-artifact@v4
+        with:
+           name: report.txt
+           path: ./report.txt  
+
 
 
   second-job:
@@ -18,5 +24,10 @@ jobs:
     needs: first-job
 
     steps:
+      - name: download the file
+        uses: actions/download-artifact@v4
+        with:
+           name: report.txt 
+
       - name: viewing report from first job
         run:  cat report.txt
