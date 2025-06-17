@@ -1,28 +1,23 @@
 name: Action-workflow
 
-on: push
-   
+on: 
+  push:
+
 jobs:
   first-job:
     runs-on: ubuntu-latest
 
     steps:
-
       - name: Print Message for 1st job
         run: |
-               sleep 10
-               echo "This is forst stage"
-
+          sleep 10
+          echo "This is first stage"
 
   second-job:
-    runs-on: ubuntu 22.04
-    
-    steps:
+    runs-on: ubuntu-22.04
 
+    steps:
       - name: Print message for 2nd job
         run: | 
-                sleep 5
-                echo "This is 2nd stage" 
-
-      
-     
+          sleep 5
+          echo "This is 2nd stage"
