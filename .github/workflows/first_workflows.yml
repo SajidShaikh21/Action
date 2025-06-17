@@ -16,3 +16,6 @@ jobs:
 
       - name: show os-details
         run: sudo cat /etc/os-release 
+       
+      - name: show file
+        run: sudo ls -l   
