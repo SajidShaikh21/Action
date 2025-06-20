@@ -4,7 +4,7 @@ on: push
 
 jobs:
   first-job:
-    runs-on: [self-hosted, linux]
+    runs-on: ubuntu-latest
 
     steps:
       - name: Create a file and view it
