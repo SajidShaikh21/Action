@@ -8,19 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print messege
-        run: echo "This is 1st job ..."
-  
-      - name: show content of /etc/passwd
-        run: sudo cat /etc/passwd  
+        run: |
 
-      - name: show os details
-        run: sudo cat /etc/os-release  
+             sleep 10
+           
+             echo "This is 1st job ..."
 
-      - name: show files
-        run: sudo ls -l
 
   second-job:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - name: print message for 2nd job
-        run: echo "This is 2nd job ..."
+        run: | 
+            
+            sleep 5 
+            echo "This is 2nd job ..."
