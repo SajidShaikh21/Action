@@ -4,7 +4,7 @@ on: push
 
 jobs:
   run-additional: 
-    runs-on: [self-hosted, linux, prod]
+    runs-on: ubuntu-latest
     steps:
       - name: create a file and view it
         run: |
