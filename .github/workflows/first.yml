@@ -20,7 +20,7 @@ jobs:
         run: sudo ls -l
 
   second-job:
-    runs-on: uubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: print message for 2nd job
         run: echo "This is 2nd job ..."
