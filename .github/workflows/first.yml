@@ -1,0 +1,10 @@
+name: b11-workflow
+
+on: push
+
+jobs:
+  first: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: print messege
+        run: echo "Hello Guys How Are You ..."
