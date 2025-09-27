@@ -28,5 +28,6 @@ jobs:
       -   name: Build and push
           uses: docker/build-push-action@v6
           with:
-           push: true
-           tags: b14/app:latest
+             file: ./Dockerfile
+             push: true
+             tags: b14/app:latest
