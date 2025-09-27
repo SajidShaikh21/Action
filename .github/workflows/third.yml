@@ -1,6 +1,6 @@
 name: b13-workflow
 
-on: push
+on: workflow_dispatch
 
 jobs:
   run-additional: 

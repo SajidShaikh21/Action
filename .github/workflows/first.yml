@@ -1,6 +1,6 @@
 name: b11-workflow
 
-on: push
+on: workflow_dispatch
 
 jobs:
 
