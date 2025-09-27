@@ -22,7 +22,7 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ vars.DOCKERHUB_USERNAME }}
+          username: sajid2102
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build and push Docker image
@@ -31,4 +31,4 @@ jobs:
           context: .
           file: ./Dockerfile           # adjust if Dockerfile is in a subfolder
           push: true
-          tags: ${{ vars.DOCKERHUB_USERNAME }}/app:latest
+          tags: sajid2102/app:latest
